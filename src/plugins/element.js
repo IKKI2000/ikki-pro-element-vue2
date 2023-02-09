@@ -181,6 +181,9 @@ Vue.use(Transfer);
 Vue.use(Tree);
 Vue.use(Upload);
 
+import locale from 'element-ui/lib/locale';
+locale.i18n((key, value) => Vue.$i18n.t(key, value));
+
 Vue.prototype.$loading = Loading.service;
 Vue.prototype.$message = Message;
 Vue.prototype.$msgbox = MessageBox;
