@@ -15,6 +15,20 @@
 </script>
 
 <style lang="scss">
+    body {
+        > .el-loading-mask.is-fullscreen {
+            .el-loading-spinner {
+                margin-top: -50px;
+                .circular {
+                    width: 80px;
+                    height: 80px;
+                }
+                .el-loading-text {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
     #app {
         font-family: Avenir, Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
