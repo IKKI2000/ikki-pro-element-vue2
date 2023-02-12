@@ -12,6 +12,16 @@ module.exports = defineConfig({
             enableInSFC: false,
         },
     },
+    css: {
+        loaderOptions: {
+            sass: {
+                sassOptions: {
+                    outputStyle: 'expanded',
+                },
+                additionalData: `@import '@/assets/style/theme/ikki.scss';`,
+            },
+        },
+    },
     productionSourceMap: false,
     configureWebpack: {
         performance: {
