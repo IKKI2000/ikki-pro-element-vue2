@@ -36,7 +36,25 @@
         text-align: center;
         color: #2c3e50;
     }
-
+    #nprogress {
+        .bar {
+            height: 3px !important;
+            background: $--color-primary !important;
+            .peg {
+                box-shadow: 0 0 10px $--color-primary, 0 0 5px $--color-primary;
+            }
+        }
+        .spinner {
+            top: 8px !important;
+            right: 8px !important;
+            .spinner-icon {
+                border-top-color: $--color-primary;
+                border-left-color: $--color-primary;
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
     nav {
         padding: 30px;
 
